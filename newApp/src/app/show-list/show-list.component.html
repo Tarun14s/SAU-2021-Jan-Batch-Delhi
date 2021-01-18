@@ -1,0 +1,23 @@
+<table class="table">
+<thead >
+  <tr>
+    <th style = "margin-left: 50px; margin-right: 50px;" scope="col">Id</th>
+    <th style = "margin-left: 50px; margin-right: 50px;" scope="col">Name</th>
+    <th style = "margin-left: 50px; margin-right: 50px;" scope="col">Age</th>
+    <th style = "margin-left: 50px; margin-right: 50px;" scope="col">Date of Birth</th>
+    <th style = "margin-left: 50px; margin-right: 50px;" scope="col">Edit</th>
+    <th style = "margin-left: 50px; margin-right: 50px;" scope="col">Delete</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let emp of empList">
+    <td style = "margin-left: 50px; margin-right: 50px;">{{emp.id}}</td>
+    <td style = "margin-left: 50px; margin-right: 50px;">{{emp.name}}</td>
+    <td style = "margin-left: 50px; margin-right: 50px;">{{emp.age}}</td>
+    <td style = "margin-left: 50px; margin-right: 50px;">{{emp.dob | date:"dd-MM-yyyy"}}</td>
+    <td style = "margin-left: 50px; margin-right: 50px;"><button  (click)="editEmp(emp.id)">Edit</button></td>
+    <td style = "margin-left: 50px; margin-right: 50px;"><button  (click)="deleteEmp(emp.id)">Delete</button></td>
+    <router-outlet></router-outlet>
+  </tr>
+</tbody>
+</table>
