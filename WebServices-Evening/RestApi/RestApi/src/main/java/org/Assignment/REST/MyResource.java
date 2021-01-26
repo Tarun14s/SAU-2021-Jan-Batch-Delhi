@@ -1,4 +1,4 @@
-package org.pragya.REST;
+package org.assignment.REST;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path; 

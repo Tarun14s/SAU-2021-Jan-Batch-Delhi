@@ -1,4 +1,4 @@
-package org.pragya.REST.resources;
+package org.assignment.REST.resources;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 
-import org.pragya.REST.model.Person;
-import org.pragya.REST.service.PersonService;
+import org.assignment.REST.model.Person;
+import org.assignment.REST.service.PersonService;
 
 @Path("/persons")
 @Consumes(MediaType.APPLICATION_JSON)

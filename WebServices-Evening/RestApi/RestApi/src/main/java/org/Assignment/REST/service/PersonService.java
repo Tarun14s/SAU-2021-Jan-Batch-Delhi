@@ -1,20 +1,20 @@
-package org.pragya.REST.service;
+package org.assignment.REST.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.pragya.REST.database.DatabaseClass;
-import org.pragya.REST.model.Person;
+import org.assignment.REST.database.DatabaseClass;
+import org.assignment.REST.model.Person;
 
 public class PersonService {
 
 	private Map<Long, Person> person= DatabaseClass.getPerson();
 	
 	public PersonService() {
-		person.put(1L, new Person(1,"Pragya","Varansi","15-10-2000"));
-		person.put(2L, new Person(2,"Kunal","Noida","3-10-2000"));
+		person.put(1L, new Person(1,"Tarun","Delhi","15-10-2000"));
+		person.put(2L, new Person(2,"Vaibhav","Noida","3-10-2000"));
 	}
 	
 	

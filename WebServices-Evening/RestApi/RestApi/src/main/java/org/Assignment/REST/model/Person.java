@@ -1,4 +1,4 @@
-package org.pragya.REST.model;
+package org.assignment.REST.model;
 
 import java.util.Date;
 
